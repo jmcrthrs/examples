@@ -60,7 +60,7 @@ export const LoginForm = () => {
           onChange={handleUsernameChange}
         />
         {loading && <div data-testid="loading">loading</div>}
-        <button type="submit" className={loading ? "loading" : ""}>
+        <button data-testid="submit-button" type="submit" className={loading ? "loading" : ""}>
           Submit
         </button>
       </div>
